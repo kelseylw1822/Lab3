@@ -32,7 +32,7 @@ double Rectangle::getWidth()
 {
     return width;
 }
-double Rectangle::getArea()
+double Rectangle::calcArea()
 {
     return length * width;
 }

@@ -1,7 +1,15 @@
-#
-//  Makefile
-//  Lab3
-//
-//  Created by Kelsey Wessel on 2/3/25.
-//
+COMPILER = g++
+OPTIONS = -Wall
+PROGRAM = main.out
+
+all : $(PROGRAM)
+
+run: $(PROGRAM)
+	./$(PROGRAM)
+
+$(PROGRAM): areaCalc.cpp Circle.h Circle.cpp Rectangle.cpp Rectangle.h Square.cpp Square.h Trapezoid.cpp Trapezoid.h
+	$(COMPILER) $(OPTIONS) areaCalc.cpp Circle.h Circle.cpp Rectangle.cpp Rectangle.h Square.cpp Square.h Trapezoid.cpp Trapezoid.h -o $(PROGRAM)
+	
+clean:
+	rm -f $(PROGRAM)
 

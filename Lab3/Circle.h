@@ -9,7 +9,7 @@ private:
 public:
     bool setRadius(double r);
     double getRadius();
-    double getArea();
+    double calcArea();
 };
 
 #endif

@@ -1,3 +1,9 @@
+// Name: Kelsey Wessel and Matthew Garino
+// My Class: CPSC 1021
+// Date: 02/03/2025
+// Desc: Calculates the area of a shape with classes based on user input.
+// Time: About 30 minutes.
+
 #include <iostream>
 #include <iomanip>
 #include "Circle.h"
@@ -20,14 +26,15 @@ int main()
     if (input == 1)
     {
         Circle circle;
+        double radius;
         cout << "Radius: " ;
-        cin >> input;
-        while (!(circle.setRadius(input)))
+        cin >> radius;
+        while (!(circle.setRadius(radius)))
         {
             cout << "Invalid input. Please enter the radius again: " ;
-            cin >> input;
+            cin >> radius;
         }
-        cout << "Area: " << fixed << setprecision(1) << circle.getArea() << endl;
+        cout << "Area: " << fixed << setprecision(1) << circle.calcArea() << endl;
     }
     else if (input == 2)
     {
@@ -40,7 +47,7 @@ int main()
             cout << "Invalid input. Please enter the side again: " ;
             cin >> side;
         }
-        cout << "Area: " << fixed << setprecision(1) << square.getArea() << endl;
+        cout << "Area: " << fixed << setprecision(1) << square.calcArea() << endl;
         
     }
     else if (input == 3)
@@ -61,7 +68,7 @@ int main()
             cout << "Invalid input. Please enter the width again: " ;
             cin >> wid;
         }
-        cout << "Area: " << fixed << setprecision(1) << rectangle.getArea() << endl;
+        cout << "Area: " << fixed << setprecision(1) << rectangle.calcArea() << endl;
     }
     else if (input == 4)
     {
@@ -83,16 +90,16 @@ int main()
         }
         cout << "Height: ";
         cin >> h;
-        while (!(trapezoid.setheight(h)))
+        while (!(trapezoid.setHeight(h)))
         {
             cout << "Invalid input. Please enter height again: " ;
             cin >> h;
         }
-        cout << "Area: " << fixed << setprecision(1) << trapezoid.getArea() << endl;
+        cout << "Area: " << fixed << setprecision(1) << trapezoid.calcArea() << endl;
     }
     else
     {
-        
+        cout << "Goodbye!" << endl;
     }
     return 0;
 }

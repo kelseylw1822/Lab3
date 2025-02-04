@@ -9,11 +9,11 @@ private:
 public:
     bool setBase1(double b1);
     bool setBase2(double b2);
-    bool setheight(double h);
+    bool setHeight(double h);
     double getBase1();
     double getBase2();
     double getHeight();
-    double getArea();
+    double calcArea();
 };
 
 #endif

@@ -10,7 +10,7 @@ public:
     bool setWidth(double w);
     double getLength();
     double getWidth();
-    double getArea();
+    double calcArea();
 };
 
 #endif

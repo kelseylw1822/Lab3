@@ -16,7 +16,7 @@ double Square::getSide()
 {
     return side;
 }
-double Square::getArea()
+double Square::calcArea()
 {
     return side * side;
 }

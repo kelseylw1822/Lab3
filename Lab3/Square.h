@@ -9,7 +9,7 @@ private:
 public:
     bool setSide(double s);
     double getSide();
-    double getArea();
+    double calcArea();
 };
 
 #endif

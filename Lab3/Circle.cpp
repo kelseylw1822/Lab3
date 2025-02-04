@@ -18,7 +18,7 @@ double Circle::getRadius()
     return radius;
 }
 
-double Circle::getArea()
+double Circle::calcArea()
 {
     return M_PI * pow(radius, 2.0);
 }
